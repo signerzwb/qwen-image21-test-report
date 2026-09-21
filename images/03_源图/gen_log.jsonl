@@ -1,0 +1,6 @@
+{"id": "src_male", "out": "E:\\qwenimage21测试\\03_源图\\src_male.png", "w": 1152, "h": 1536, "ratio_src": "wh_ratio:3:4", "n_images": 0, "seconds": 183.4, "peak_vram_gb": 16.39, "status": "OK"}
+{"id": "src_street", "out": "E:\\qwenimage21测试\\03_源图\\src_street.png", "w": 1536, "h": 864, "ratio_src": "wh_ratio:16:9", "n_images": 0, "seconds": 121.2, "peak_vram_gb": 16.4, "status": "OK"}
+{"id": "src_product", "out": "E:\\qwenimage21测试\\03_源图\\src_product.png", "w": 1536, "h": 1536, "ratio_src": "wh_ratio:1:1", "n_images": 0, "seconds": 193.0, "peak_vram_gb": 16.38, "status": "OK"}
+{"id": "src_landscape", "out": "E:\\qwenimage21测试\\03_源图\\src_landscape.png", "w": 1536, "h": 864, "ratio_src": "wh_ratio:16:9", "n_images": 0, "seconds": 115.8, "peak_vram_gb": 16.38, "status": "OK"}
+{"id": "src_food", "out": "E:\\qwenimage21测试\\03_源图\\src_food.png", "w": 1536, "h": 1536, "ratio_src": "wh_ratio:1:1", "n_images": 0, "seconds": 188.1, "peak_vram_gb": 16.39, "status": "OK"}
+{"id": "src_car", "out": "E:\\qwenimage21测试\\03_源图\\src_car.png", "w": 1536, "h": 864, "ratio_src": "wh_ratio:16:9", "n_images": 0, "seconds": 112.8, "peak_vram_gb": 16.38, "status": "OK"}
