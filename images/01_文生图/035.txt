@@ -1,0 +1,16 @@
+案例: 035  类别: text_mix
+============================================================
+原始提示词: 高速公路指示牌 BEIJING → 20km，晴天，旅拍
+
+PE扩写提示词(实际送入模型): A realistic wide-angle travel photograph shows a highway guide sign dominating the central-left portion of the frame, mounted on two cylindrical galvanized metal posts beside a mountain road. The sign is a large horizontal rectangle with rounded corners, a dark green matte face, a silver-gray border, visible corner screws, and high-contrast white sans-serif lettering. At the upper part of the main sign, the largest Chinese destination label reads "北京", functioning as the primary bilingual destination name. Directly below it, in smaller but still prominent all-capital English letters, the destination is labeled "BEIJING". Farther down, very large white numerals display "20", with the smaller unit "km" positioned to the right, indicating the distance. Beneath the distance, a smaller Chinese exit instruction reads "前方路口向右行驶", and below that, the English line reads "EXIT 0.5KM AHEAD". A bold white upward-pointing arrow sits to the left of the numeric distance, visually aligning with the direction of travel toward Beijing. To the right of the main sign, several smaller green highway direction signs recede into the distance along the roadside; their lettering is too small and blurred to read clearly, but their shapes, colors, and mounting posts match the main sign system.
+
+The scene is set outdoors in bright daylight under a clear blue sky with a smooth gradient from deeper blue near the top to lighter cyan closer to the horizon. Behind the sign, rugged rocky cliffs and sunlit tan-brown mountain ridges stretch across the middle background, with layers of hazy blue-gray mountains fading into the distance on the right. Green coniferous trees, shrubs, wild grasses, and scattered stones occupy the roadside slope behind and around the sign, adding texture and depth.
+
+In the lower-right foreground, the rear of a dark metallic sports coupe is captured with intentional motion blur, driving along the paved multi-lane highway. The car has a low aerodynamic body, glossy reflections, red rear lights, a rear spoiler, dark wheels, and a blanked-out badge area on the trunk. Its white license plate contains the visible text "京A·88888" in black characters. White dashed lane markings run diagonally into the distance on the asphalt, reinforcing the sense of forward movement and road perspective. Metal guardrails line the road edges, reflecting sunlight with thin silver highlights.
+
+The composition uses a dramatic roadside perspective: the large sign fills much of the foreground while the road curves away toward the lower-right background, creating strong leading lines. Lighting is crisp and natural, with strong sun from above casting defined shadows and warm highlights on rocks, vehicles, and sign metal. The overall visual style is photorealistic, scenic, and cinematic, emphasizing travel, direction, speed, and a road trip atmosphere toward Beijing through mountainous terrain.
+
+分辨率: 1536 x 864
+参数: steps=30 seed=42 dtype=bf16 cpu_offload
+性能: 生成耗时 101.0s, 峰值显存 16.8GB, 状态 OK
+PE耗时: 111.9s
