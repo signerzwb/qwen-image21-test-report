@@ -1,0 +1,1 @@
+This is an RGBA image with transparency. Remove the background of the man in <image1> completely, keep the person fully intact with clean hair edges and clothing details. The image has alpha channel and the background is fully transparent.

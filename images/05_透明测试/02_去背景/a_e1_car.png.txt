@@ -1,0 +1,1 @@
+This is an RGBA image with transparency. Remove the background of the white sports car in <image1> completely, keep the car fully intact with clean precise edges including wheels and ground reflections. The image has alpha channel and the background is fully transparent.

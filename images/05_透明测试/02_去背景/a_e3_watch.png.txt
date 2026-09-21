@@ -1,0 +1,1 @@
+This is an RGBA image with transparency. Remove the background and the marble table of <image1> completely, cut out the luxury wristwatch with clean precise edges, keep the watch fully intact including reflections on the metal. The image has alpha channel and the background is fully transparent.

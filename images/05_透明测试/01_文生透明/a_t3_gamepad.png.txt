@@ -1,0 +1,1 @@
+This is an RGBA image with transparency. A glossy 3D rendered game controller in matte navy blue with soft orange accents, soft studio lighting, slight top-down angle, modern app icon style, centered. The image has alpha channel and the background is transparent.

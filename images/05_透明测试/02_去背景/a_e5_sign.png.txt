@@ -1,0 +1,1 @@
+This is an RGBA image with transparency. Remove the entire street scene background of <image1> completely, isolate only the old wooden signboard with the two Chinese characters 面馆 hanging at the storefront, keep the signboard intact with clean edges and its original text. The image has alpha channel and the background is fully transparent.

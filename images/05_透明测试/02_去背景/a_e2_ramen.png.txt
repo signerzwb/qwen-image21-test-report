@@ -1,0 +1,1 @@
+This is an RGBA image with transparency. Remove the background completely, cut out the bowl of ramen with the chopsticks in <image1> as one piece, keep the food, bowl and chopsticks fully intact with clean edges, no table, no window, no light. The image has alpha channel and the background is fully transparent.
