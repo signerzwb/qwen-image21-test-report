@@ -1,0 +1,8 @@
+WORKER dev=1 ids=['11_time_night', '12_season_snow', '13_add_scarf', '14_add_glasses', '15_add_boat', '16_attr_color'] gpu=NVIDIA GeForce RTX 3090
+[1/6] 11_time_night 1536x864 OK 140s peak=17.3GB
+[2/6] 12_season_snow 1536x864 OK 112s peak=17.3GB
+[3/6] 13_add_scarf 1536x864 OK 107s peak=17.4GB
+[4/6] 14_add_glasses 1536x864 OK 109s peak=17.3GB
+[5/6] 15_add_boat 1536x864 OK 108s peak=17.4GB
+[6/6] 16_attr_color 1536x864 OK 108s peak=17.3GB
+WORKER_DONE dev=1 done=6

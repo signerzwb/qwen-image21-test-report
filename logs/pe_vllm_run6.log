@@ -1,0 +1,133 @@
+﻿WARNING 09-21 05:31:22 [cuda.py:959] Detected different devices in the system: NVIDIA GeForce RTX 3090, NVIDIA GeForce RTX 3090, NVIDIA GeForce RTX 3080. Please make sure to set `CUDA_DEVICE_ORDER=PCI_BUS_ID` to avoid unexpected behavior.
+task=t2i cases=3 sampling: temperature=1.0 top_p=0.95 top_k=20 min_p=0.0 presence_penalty=1.5 max_new_tokens=16256
+Loading vLLM engine from models\Qwen-Image-2.1-PE-T2I (tp=1) ...
+INFO 09-21 05:31:44 [api_utils.py:273] non-default args: {'trust_remote_code': True, 'dtype': 'bfloat16', 'seed': 42, 'max_model_len': 8192, 'enable_prefix_caching': False, 'gpu_memory_utilization': 0.93, 'max_num_seqs': 1, 'disable_log_stats': True, 'enforce_eager': True, 'limit_mm_per_prompt': None, 'model': 'models\\Qwen-Image-2.1-PE-T2I'}
+INFO 09-21 05:31:44 [model.py:645] Resolved architecture: Qwen3_5ForConditionalGeneration
+INFO 09-21 05:31:44 [model.py:1883] Using max model len 8192
+INFO 09-21 05:31:48 [scheduler.py:242] Chunked prefill is enabled with max_num_batched_tokens=8192.
+WARNING 09-21 05:31:48 [vllm.py:1194] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+WARNING 09-21 05:31:48 [vllm.py:1247] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+INFO 09-21 05:31:48 [kernel.py:306] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'])
+INFO 09-21 05:31:48 [vllm.py:1426] Cudagraph is disabled under eager mode
+INFO 09-21 05:31:48 [compilation.py:329] Enabled custom fusions: norm_quant, act_quant
+python.exe : [transformers] The `use_fast` parameter is deprecated and will be removed in a future version. Use `backen
+d="torchvision"` instead of `use_fast=True`, or `backend="pil"` instead of `use_fast=False`.
+At line:1 char:112
++ ... w project"; & venv_vllm313\Scripts\python.exe -X utf8 "Qwen-Image-2.1 ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([transformers] ...se_fast=False`.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+INFO 09-21 05:32:02 [core.py:121] Initializing a V1 LLM engine (v0.27.1) with config: model='models\\Qwen-Image-2.1-PE-T2I', speculative_config=None, tokenizer='models\\Qwen-Image-2.1-PE-T2I', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=True, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=42, served_model_name=models\Qwen-Image-2.1-PE-T2I, enable_prefix_caching=False, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'ir_enable_torch_wrap': False, 'splitting_ops': [], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [8192], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native']), enable_flashinfer_autotune=True, enable_cutedsl_warmup=True, enable_jit_warmup=True, enable_bf16x3_router_gemm=False, moe_backend='auto', linear_backend='auto')
+INFO 09-21 05:32:03 [parallel_state.py:1654] world_size=1 rank=0 local_rank=0 distributed_init_method=tcp://192.168.2.101:61435 backend=nccl
+WARNING 09-21 05:32:03 [parallel_state.py:1667] Distributed backend nccl is not available; falling back to fake.
+INFO 09-21 05:32:03 [parallel_state.py:1994] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank N/A, EPLB rank N/A
+INFO 09-21 05:32:03 [topk_topp_sampler.py:46] FlashInfer top-p/top-k sampling disabled via VLLM_USE_FLASHINFER_SAMPLER=0.
+INFO 09-21 05:32:03 [gpu_model_runner.py:5308] Starting to load model models\Qwen-Image-2.1-PE-T2I...
+INFO 09-21 05:32:04 [cuda.py:541] Using backend AttentionBackendEnum.FLASH_ATTN for vit attention
+INFO 09-21 05:32:04 [mm_encoder_attention.py:375] Using AttentionBackendEnum.FLASH_ATTN for MMEncoderAttention.
+INFO 09-21 05:32:05 [qwen_gdn_linear_attn.py:150] Using Triton/FLA GDN prefill kernel (requested=auto, head_k_dim=128).
+INFO 09-21 05:32:05 [cuda.py:482] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+INFO 09-21 05:32:05 [flash_attn.py:789] Using FlashAttention version 2
+INFO 09-21 05:32:05 [weight_utils.py:1024] Filesystem type for checkpoints: unknown. Checkpoint size: 17.53 GiB. Available RAM: 62.65 GiB.
+INFO 09-21 05:32:05 [weight_utils.py:1047] Auto-prefetch is disabled because the filesystem (unknown) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+
+Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
+C:\Users\Administrator\Documents\ChatGPT\New project\venv_vllm313\Lib\site-packages\vllm\model_executor\model_loader\we
+ight_utils.py:953: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensor
+s. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its d
+ata or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this 
+program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:219.)
+  cpu_u8 = torch.from_numpy(byte_slice)
+
+Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:15<00:46, 15.48s/it]
+
+Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:27<00:26, 13.43s/it]
+
+Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:40<00:13, 13.38s/it]
+
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:52<00:00, 12.75s/it]
+
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:52<00:00, 13.15s/it]
+
+INFO 09-21 05:32:59 [default_loader.py:430] Loading weights took 53.35 seconds
+INFO 09-21 05:33:00 [gpu_model_runner.py:5405] Model loading took 17.66 GiB memory and 55.027467 seconds
+INFO 09-21 05:33:00 [interface.py:911] Setting attention block size to 528 tokens to ensure that attention page size is >= mamba page size.
+INFO 09-21 05:33:00 [interface.py:935] Padding mamba page size by 0.76% to ensure that mamba page size and attention page size are exactly equal.
+INFO 09-21 05:33:00 [gpu_model_runner.py:6465] Encoder cache will be initialized with a budget of 16384 tokens, and profiled with 1 image items of the maximum feature size.
+INFO 09-21 05:53:29 [gpu_worker.py:563] Available KV cache memory: -1.84 GiB
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "C:\Users\Administrator\Documents\ChatGPT\New project\Qwen-Image-2.1-main\prompt_rewrite\run_vllm.py", 
+line 151, in <module>
+[rank0]:     raise SystemExit(main())
+[rank0]:                      ~~~~^^
+[rank0]:   File "C:\Users\Administrator\Documents\ChatGPT\New project\Qwen-Image-2.1-main\prompt_rewrite\run_vllm.py", 
+line 114, in main
+[rank0]:     llm = LLM(
+[rank0]:         model=args.ckpt,
+[rank0]:     ...<10 lines>...
+[rank0]:         trust_remote_code=True,
+[rank0]:     )
+[rank0]:   File "C:\Users\Administrator\Documents\ChatGPT\New project\venv_vllm313\Lib\site-packages\vllm\entrypoints\l
+lm.py", line 339, in __init__
+[rank0]:     self.llm_engine = LLMEngine.from_engine_args(
+[rank0]:                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+[rank0]:         engine_args=engine_args, usage_context=UsageContext.LLM_CLASS
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:     )
+[rank0]:     ^
+[rank0]:   File "C:\Users\Administrator\Documents\ChatGPT\New project\venv_vllm313\Lib\site-packages\vllm\v1\engine\llm
+_engine.py", line 179, in from_engine_args
+[rank0]:     return cls(
+[rank0]:         vllm_config=vllm_config,
+[rank0]:     ...<4 lines>...
+[rank0]:         multiprocess_mode=enable_multiprocessing,
+[rank0]:     )
+[rank0]:   File "C:\Users\Administrator\Documents\ChatGPT\New project\venv_vllm313\Lib\site-packages\vllm\v1\engine\llm
+_engine.py", line 105, in __init__
+[rank0]:     self.engine_core = EngineCoreClient.make_client(
+[rank0]:                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+[rank0]:         multiprocess_mode=multiprocess_mode,
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:     ...<3 lines>...
+[rank0]:         log_stats=self.log_stats,
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:     )
+[rank0]:     ^
+[rank0]:   File "C:\Users\Administrator\Documents\ChatGPT\New project\venv_vllm313\Lib\site-packages\vllm\v1\engine\cor
+e_client.py", line 113, in make_client
+[rank0]:     return InprocClient(vllm_config, executor_class, log_stats)
+[rank0]:   File "C:\Users\Administrator\Documents\ChatGPT\New project\venv_vllm313\Lib\site-packages\vllm\v1\engine\cor
+e_client.py", line 321, in __init__
+[rank0]:     self.engine_core = EngineCore(*args, **kwargs)
+[rank0]:                        ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+[rank0]:   File "C:\Users\Administrator\Documents\ChatGPT\New project\venv_vllm313\Lib\site-packages\vllm\v1\engine\cor
+e.py", line 143, in __init__
+[rank0]:     kv_cache_config = self._initialize_kv_caches(vllm_config)
+[rank0]:   File "C:\Users\Administrator\Documents\ChatGPT\New project\venv_vllm313\Lib\site-packages\vllm\tracing\otel.
+py", line 178, in sync_wrapper
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "C:\Users\Administrator\Documents\ChatGPT\New project\venv_vllm313\Lib\site-packages\vllm\v1\engine\cor
+e.py", line 304, in _initialize_kv_caches
+[rank0]:     kv_cache_configs = get_kv_cache_configs(
+[rank0]:         vllm_config, kv_cache_specs, available_gpu_memory
+[rank0]:     )
+[rank0]:   File "C:\Users\Administrator\Documents\ChatGPT\New project\venv_vllm313\Lib\site-packages\vllm\v1\core\kv_ca
+che_utils.py", line 2190, in get_kv_cache_configs
+[rank0]:     _check_enough_kv_cache_memory(
+[rank0]:     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+[rank0]:         avail_mem,
+[rank0]:         ^^^^^^^^^^
+[rank0]:     ...<2 lines>...
+[rank0]:         partial(_estimate_max_model_len_from_groups, vllm_config, groups),
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:     )
+[rank0]:     ^
+[rank0]:   File "C:\Users\Administrator\Documents\ChatGPT\New project\venv_vllm313\Lib\site-packages\vllm\v1\core\kv_ca
+che_utils.py", line 758, in _check_enough_kv_cache_memory
+[rank0]:     raise ValueError(
+[rank0]:     ...<6 lines>...
+[rank0]:     )
+[rank0]: ValueError: No available memory for the cache blocks. Try increasing `gpu_memory_utilization` when initializin
+g the engine (this flag also controls CPU memory reservation on the CPU backend, despite its name). See https://docs.vl
+lm.ai/en/latest/configuration/conserving_memory/ for more details.

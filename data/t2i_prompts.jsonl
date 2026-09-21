@@ -1,0 +1,50 @@
+{"id": "001", "category": "portrait", "prompt": "街拍照片，年轻中国女性，胶片风格，半身特写，自然光"}
+{"id": "002", "category": "portrait", "prompt": "老北京胡同里的早点摊，热气腾腾，清晨纪实摄影"}
+{"id": "003", "category": "portrait", "prompt": "雨夜城市街头，霓虹灯倒影在湿漉漉的路面上，电影感"}
+{"id": "004", "category": "portrait", "prompt": "雪山脚下的小木屋，黄昏，炊烟，大雪将至"}
+{"id": "005", "category": "portrait", "prompt": "海边悬崖上的灯塔，风暴将至， dramatic 云层，巨浪"}
+{"id": "006", "category": "portrait", "prompt": "沙漠里孤独的公路，日落，笔直延伸到地平线"}
+{"id": "007", "category": "portrait", "prompt": "上海外滩夜景，俯瞰视角，两岸灯火"}
+{"id": "008", "category": "portrait", "prompt": "热闹的菜市场，烟火气，纪实摄影风格"}
+{"id": "009", "category": "animal", "prompt": "一只橘猫趴在窗台打盹，午后暖阳，浅景深"}
+{"id": "010", "category": "animal", "prompt": "猎豹在非洲草原全速奔跑，尘土飞扬"}
+{"id": "011", "category": "animal", "prompt": "蓝鲸跃出海面，水花四溅，晨光"}
+{"id": "012", "category": "animal", "prompt": "小熊猫在竹林里吃竹子，特写"}
+{"id": "013", "category": "food", "prompt": "一碗热气腾腾的汤面，俯拍，蒸汽袅袅，苍蝇馆子氛围"}
+{"id": "014", "category": "food", "prompt": "法式马卡龙拼盘，粉色背景，产品摄影"}
+{"id": "015", "category": "food", "prompt": "中式年夜饭，满桌菜肴，俯拍，节日氛围"}
+{"id": "016", "category": "interior", "prompt": "极简日式客厅，落地窗，午后光线， tatami"}
+{"id": "017", "category": "architecture", "prompt": "哥特式大教堂内部，彩色玻璃窗透下的光线"}
+{"id": "018", "category": "architecture", "prompt": "未来感图书馆，螺旋楼梯，晨光洒入"}
+{"id": "019", "category": "interior", "prompt": "成都老茶馆，竹椅，盖碗茶，窗外雾气"}
+{"id": "020", "category": "product", "prompt": "香水瓶产品图，水珠，黑色背景，高级感"}
+{"id": "021", "category": "product", "prompt": "跑鞋产品图，爆炸视图，科技感"}
+{"id": "022", "category": "product", "prompt": "智能手表，金属表带，暗调，表盘特写"}
+{"id": "023", "category": "product", "prompt": "复古胶片相机，木质桌面，暖光，浅景深"}
+{"id": "024", "category": "scifi", "prompt": "太空站窗外的宇航员，地球为背景"}
+{"id": "025", "category": "scifi", "prompt": "赛博朋克小巷，全息广告牌，巡逻的机器人"}
+{"id": "026", "category": "scifi", "prompt": "深海潜水器，周围一群发光水母"}
+{"id": "027", "category": "scifi", "prompt": "火星基地穹顶内部，生活区，大窗外红色平原"}
+{"id": "028", "category": "text_zh", "prompt": "宣纸书法，大字 山高水长 四个字，朱砂印章"}
+{"id": "029", "category": "text_zh", "prompt": "火锅店招牌 老灶火锅，红灯笼，夜晚，霓虹"}
+{"id": "030", "category": "text_zh", "prompt": "书店海报，主标题 纸上春秋，副标题 第12届城市书展，极简设计"}
+{"id": "031", "category": "text_zh", "prompt": "小餐馆手写黑板菜单  今日特供：红烧肉 28元"}
+{"id": "032", "category": "text_zh", "prompt": "教室黑板上的高考倒计时 距高考还有365天，学生视角"}
+{"id": "033", "category": "text_en", "prompt": "咖啡馆霓虹灯牌 OPEN 24H，夜晚街角，倒影"}
+{"id": "034", "category": "text_mix", "prompt": "杂志封面，大标题 AI WEEKLY，刊号 NO.42，未来主义风格"}
+{"id": "035", "category": "text_mix", "prompt": "高速公路指示牌 BEIJING → 20km，晴天，旅拍"}
+{"id": "036", "category": "style", "prompt": "新海诚风格动漫，少女站在樱花树下，花瓣飞舞"}
+{"id": "037", "category": "style", "prompt": "仿维米尔油画风格，戴珍珠耳环的少女，暖棕色调"}
+{"id": "038", "category": "style", "prompt": "水彩画风格，伦敦红色双层巴士，雨天街道"}
+{"id": "039", "category": "style", "prompt": "中国水墨画，孤舟蓑笠翁独钓寒江雪，留白构图"}
+{"id": "040", "category": "style", "prompt": "皮克斯风格3D渲染，可爱的机器人笨拙地倒水，柔光"}
+{"id": "041", "category": "style", "prompt": "8-bit像素风，勇者站在迷宫入口，复古游戏画面"}
+{"id": "042", "category": "style", "prompt": "低多边形low poly风格，极光下的雪山小镇"}
+{"id": "043", "category": "style", "prompt": "黑色电影noir风格，侦探站在雨巷，高对比度光影"}
+{"id": "044", "category": "composition", "prompt": "五人篮球赛，跳投瞬间，动态模糊，汗水飞溅"}
+{"id": "045", "category": "composition", "prompt": "音乐节人群，烟花绽放，逆光剪影"}
+{"id": "046", "category": "composition", "prompt": "三代同堂的家庭聚餐，笑声，暖色调，电影感"}
+{"id": "047", "category": "composition", "prompt": "街头艺人拉小提琴，围坐的小孩听得入迷，暖光"}
+{"id": "048", "category": "composition", "prompt": "企鹅一家在雪原上列队行走，纪录片长焦视角"}
+{"id": "049", "category": "composition", "prompt": "复古跑车行驶在沿海公路，动态追拍"}
+{"id": "050", "category": "composition", "prompt": "夜市，串灯，熙攘人群，俯拍，生活气息"}

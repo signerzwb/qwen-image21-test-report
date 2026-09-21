@@ -1,0 +1,138 @@
+﻿WARNING 09-21 06:16:21 [cuda.py:959] Detected different devices in the system: NVIDIA GeForce RTX 3090, NVIDIA GeForce RTX 3090, NVIDIA GeForce RTX 3080. Please make sure to set `CUDA_DEVICE_ORDER=PCI_BUS_ID` to avoid unexpected behavior.
+task=t2i cases=50 sampling: temperature=1.0 top_p=0.95 top_k=20 min_p=0.0 presence_penalty=1.5 max_new_tokens=16256
+Loading vLLM engine from models\Qwen-Image-2.1-PE-T2I (tp=1) ...
+INFO 09-21 06:16:43 [api_utils.py:273] non-default args: {'trust_remote_code': True, 'dtype': 'bfloat16', 'seed': 42, 'max_model_len': 16384, 'enable_prefix_caching': False, 'gpu_memory_utilization': 0.93, 'max_num_seqs': 2, 'disable_log_stats': True, 'limit_mm_per_prompt': None, 'model': 'models\\Qwen-Image-2.1-PE-T2I'}
+INFO 09-21 06:16:43 [model.py:645] Resolved architecture: Qwen3_5ForConditionalGeneration
+INFO 09-21 06:16:43 [model.py:1883] Using max model len 16384
+INFO 09-21 06:16:47 [scheduler.py:242] Chunked prefill is enabled with max_num_batched_tokens=8192.
+INFO 09-21 06:16:47 [kernel.py:306] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+python.exe : [transformers] The `use_fast` parameter is deprecated and will be removed in a future version. Use `backen
+d="torchvision"` instead of `use_fast=True`, or `backend="pil"` instead of `use_fast=False`.
+At line:1 char:112
++ ... w project"; & venv_vllm313\Scripts\python.exe -X utf8 "Qwen-Image-2.1 ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([transformers] ...se_fast=False`.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+INFO 09-21 06:17:01 [core.py:121] Initializing a V1 LLM engine (v0.27.1) with config: model='models\\Qwen-Image-2.1-PE-T2I', speculative_config=None, tokenizer='models\\Qwen-Image-2.1-PE-T2I', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=16384, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=False, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=42, served_model_name=models\Qwen-Image-2.1-PE-T2I, enable_prefix_caching=False, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.VLLM_COMPILE: 3>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['none'], 'ir_enable_torch_wrap': True, 'splitting_ops': ['vllm::unified_attention_with_output', 'vllm::unified_mla_attention_with_output', 'vllm::mamba_mixer2', 'vllm::mamba_mixer', 'vllm::short_conv', 'vllm::linear_attention', 'vllm::qwen_gdn_attention_core', 'vllm::gdn_attention_core_xpu', 'vllm::olmo_hybrid_gdn_full_forward', 'vllm::sparse_attn_indexer', 'vllm::rocm_aiter_sparse_attn_indexer', 'vllm::deepseek_v4_attention', 'vllm::hpc_rope_norm_forward', 'vllm::unified_kv_cache_update', 'vllm::unified_mla_kv_cache_update'], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [8192], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.FULL_AND_PIECEWISE: (2, 1)>, 'cudagraph_num_of_warmups': 1, 'cudagraph_capture_sizes': [1, 2, 4], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': False, 'fuse_act_quant': False, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 4, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native']), enable_flashinfer_autotune=True, enable_cutedsl_warmup=True, enable_jit_warmup=True, enable_bf16x3_router_gemm=False, moe_backend='auto', linear_backend='auto')
+INFO 09-21 06:17:01 [parallel_state.py:1654] world_size=1 rank=0 local_rank=0 distributed_init_method=tcp://192.168.2.101:56349 backend=nccl
+WARNING 09-21 06:17:01 [parallel_state.py:1667] Distributed backend nccl is not available; falling back to fake.
+INFO 09-21 06:17:02 [parallel_state.py:1994] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank N/A, EPLB rank N/A
+INFO 09-21 06:17:02 [topk_topp_sampler.py:46] FlashInfer top-p/top-k sampling disabled via VLLM_USE_FLASHINFER_SAMPLER=0.
+INFO 09-21 06:17:02 [gpu_model_runner.py:5308] Starting to load model models\Qwen-Image-2.1-PE-T2I...
+INFO 09-21 06:17:03 [cuda.py:541] Using backend AttentionBackendEnum.FLASH_ATTN for vit attention
+INFO 09-21 06:17:03 [mm_encoder_attention.py:375] Using AttentionBackendEnum.FLASH_ATTN for MMEncoderAttention.
+INFO 09-21 06:17:04 [qwen_gdn_linear_attn.py:150] Using Triton/FLA GDN prefill kernel (requested=auto, head_k_dim=128).
+INFO 09-21 06:17:04 [cuda.py:482] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+INFO 09-21 06:17:04 [flash_attn.py:789] Using FlashAttention version 2
+INFO 09-21 06:17:05 [weight_utils.py:1024] Filesystem type for checkpoints: unknown. Checkpoint size: 17.53 GiB. Available RAM: 133.80 GiB.
+INFO 09-21 06:17:05 [weight_utils.py:1047] Auto-prefetch is disabled because the filesystem (unknown) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+
+Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
+C:\Users\Administrator\Documents\ChatGPT\New project\venv_vllm313\Lib\site-packages\vllm\model_executor\model_loader\we
+ight_utils.py:953: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensor
+s. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its d
+ata or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this 
+program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:219.)
+  cpu_u8 = torch.from_numpy(byte_slice)
+
+Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:06<00:20,  6.94s/it]
+
+Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:15<00:15,  7.77s/it]
+
+Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:23<00:08,  8.14s/it]
+
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:30<00:00,  7.50s/it]
+
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:30<00:00,  7.60s/it]
+
+INFO 09-21 06:17:36 [default_loader.py:430] Loading weights took 31.17 seconds
+INFO 09-21 06:17:37 [gpu_model_runner.py:5405] Model loading took 17.66 GiB memory and 33.220081 seconds
+INFO 09-21 06:17:37 [interface.py:911] Setting attention block size to 528 tokens to ensure that attention page size is >= mamba page size.
+INFO 09-21 06:17:37 [interface.py:935] Padding mamba page size by 0.76% to ensure that mamba page size and attention page size are exactly equal.
+INFO 09-21 06:17:37 [gpu_model_runner.py:6465] Encoder cache will be initialized with a budget of 16384 tokens, and profiled with 1 image items of the maximum feature size.
+INFO 09-21 06:17:57 [caching.py:335] reconstructed serializable fn from standalone compile artifacts. num_artifacts=13 num_submods=33
+INFO 09-21 06:17:57 [decorators.py:311] Directly load AOT compilation from path C:\Users\Administrator\.cache\vllm\torch_compile_cache\torch_aot_compile\d6c953e9e7939c31f65e8f30d5567e24cf6ee65dce1c46f064a571b0104a882f\rank_0_0\model
+INFO 09-21 06:17:57 [monitor.py:53] torch.compile took 15.12 s in total
+INFO 09-21 06:18:00 [monitor.py:81] Initial profiling/warmup run took 2.74 s
+INFO 09-21 06:18:01 [gpu_model_runner.py:6681] Profiling CUDA graph memory: PIECEWISE=3 (largest=4), FULL=2 (largest=2)
+INFO 09-21 06:18:03 [gpu_model_runner.py:6806] Estimated CUDA graph memory: 0.04 GiB total
+INFO 09-21 06:18:03 [gpu_worker.py:563] Available KV cache memory: 2.55 GiB
+INFO 09-21 06:18:03 [gpu_worker.py:578] CUDA graph memory profiling is enabled (default since v0.21.0). The current --gpu-memory-utilization=0.9300 is equivalent to --gpu-memory-utilization=0.9282 without CUDA graph memory profiling. To maintain the same effective KV cache size as before, increase --gpu-memory-utilization to 0.9318. To disable, set VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS=0.
+INFO 09-21 06:18:03 [kv_cache_utils.py:2235] GPU KV cache size: 73,962 tokens
+INFO 09-21 06:18:03 [kv_cache_utils.py:2236] Maximum concurrency for 16,384 tokens per request: 4.51x
+INFO 09-21 06:18:03 [qwen_triton_warmup.py:270] Warming up Qwen Triton kernels for model_type=qwen3_5_text.
+INFO 09-21 06:18:04 [gpu_model_runner.py:6867] Rank 0: Torch profiler disabled for CUDA graph capture
+
+Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   0%|          | 0/3 [00:00<?, ?it/s]
+Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  33%|███▎      | 1/3 [00:00<00:00,  4.38it/s]
+Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 3/3 [00:00<00:00,  9.46it/s]
+Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 3/3 [00:00<00:00,  8.47it/s]
+
+Capturing CUDA graphs (decode, FULL):   0%|          | 0/2 [00:00<?, ?it/s]
+Capturing CUDA graphs (decode, FULL): 100%|██████████| 2/2 [00:00<00:00, 11.57it/s]
+Capturing CUDA graphs (decode, FULL): 100%|██████████| 2/2 [00:00<00:00, 11.56it/s]
+INFO 09-21 06:18:05 [gpu_model_runner.py:6913] Graph capturing finished in 1 secs, took 0.03 GiB
+INFO 09-21 06:18:05 [gpu_worker.py:726] CUDA graph pool memory: 0.03 GiB (actual), 0.04 GiB (estimated), difference: 0.01 GiB (46.7%).
+INFO 09-21 06:18:05 [gpu_worker.py:789] Free memory on device (22.79/24.0 GiB) on startup. Desired GPU memory utilization is (0.93, 22.32 GiB). Actual usage is 17.84 GiB for consumed memory (weights + non-torch), 1.93 GiB for peak activation, and 0.03 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=2554450555` (2.38 GiB) to fit into requested memory, or `--kv-cache-memory=3057663488` (2.85 GiB) to fully utilize gpu memory. Current kv cache memory in use is 2.55 GiB.
+INFO 09-21 06:18:06 [jit_monitor.py:79] Kernel JIT monitor activated; monitored JIT compilations during inference will use mode=warn.
+INFO 09-21 06:18:06 [core.py:348] init engine (profile, create kv cache, warmup model) took 29.30 s (compilation: 15.12 s)
+INFO 09-21 06:18:09 [hf.py:540] Detected the chat template content format to be 'openai'. You can set `--chat-template-content-format` to override this.
+[transformers] Qwen3VL video processing does not apply the per-frame pixel cap the reference implementation (qwen-vl-ut
+ils) applies, so some videos cost far more tokens than they would there. In v5.22 the capped behavior will become the d
+efault and `cap_pixels_per_frame` will be removed. Pass `cap_pixels_per_frame=True` to adopt the reference behavior now
+, or `False` to keep the current behavior and silence this warning.
+INFO 09-21 06:18:28 [base.py:235] Multi-modal warmup completed in 19.268s
+INFO 09-21 06:18:31 [base.py:235] Readonly multi-modal warmup completed in 2.238s
+resume: 1 already in output, 49 pending (chunk=2)
+[1/49] id=002 parse_ok=True elapsed=117s
+[2/49] id=003 parse_ok=True elapsed=117s
+[3/49] id=004 parse_ok=True elapsed=84s
+[4/49] id=005 parse_ok=True elapsed=84s
+[5/49] id=006 parse_ok=True elapsed=76s
+[6/49] id=007 parse_ok=True elapsed=76s
+[7/49] id=008 parse_ok=True elapsed=110s
+[8/49] id=009 parse_ok=True elapsed=110s
+[9/49] id=010 parse_ok=True elapsed=59s
+[10/49] id=011 parse_ok=True elapsed=59s
+[11/49] id=012 parse_ok=True elapsed=77s
+[12/49] id=013 parse_ok=True elapsed=77s
+[13/49] id=014 parse_ok=True elapsed=113s
+[14/49] id=015 parse_ok=True elapsed=113s
+[15/49] id=016 parse_ok=True elapsed=97s
+[16/49] id=017 parse_ok=True elapsed=97s
+[17/49] id=018 parse_ok=True elapsed=131s
+[18/49] id=019 parse_ok=True elapsed=131s
+[19/49] id=020 parse_ok=True elapsed=111s
+[20/49] id=021 parse_ok=True elapsed=111s
+[21/49] id=022 parse_ok=True elapsed=71s
+[22/49] id=023 parse_ok=True elapsed=71s
+[23/49] id=024 parse_ok=True elapsed=133s
+[24/49] id=025 parse_ok=True elapsed=133s
+[25/49] id=026 parse_ok=True elapsed=152s
+[26/49] id=027 parse_ok=True elapsed=152s
+[27/49] id=028 parse_ok=True elapsed=111s
+[28/49] id=029 parse_ok=True elapsed=111s
+[29/49] id=030 parse_ok=True elapsed=83s
+[30/49] id=031 parse_ok=True elapsed=83s
+[31/49] id=032 parse_ok=True elapsed=125s
+[32/49] id=033 parse_ok=True elapsed=125s
+[33/49] id=034 parse_ok=True elapsed=112s
+[34/49] id=035 parse_ok=True elapsed=112s
+[35/49] id=036 parse_ok=True elapsed=89s
+[36/49] id=037 parse_ok=True elapsed=89s
+[37/49] id=038 parse_ok=True elapsed=107s
+[38/49] id=039 parse_ok=True elapsed=107s
+[39/49] id=040 parse_ok=True elapsed=90s
+[40/49] id=041 parse_ok=True elapsed=90s
+[41/49] id=042 parse_ok=True elapsed=98s
+[42/49] id=043 parse_ok=True elapsed=98s
+[43/49] id=044 parse_ok=True elapsed=104s
+[44/49] id=045 parse_ok=True elapsed=104s
+[45/49] id=046 parse_ok=True elapsed=126s
+[46/49] id=047 parse_ok=True elapsed=126s
+[47/49] id=048 parse_ok=True elapsed=81s
+[48/49] id=049 parse_ok=True elapsed=81s
+[49/49] id=050 parse_ok=True elapsed=144s
+Parsed 49/49 answers cleanly (parse_ok=true).
+PE_RUN_DONE wrote 49 new records to C:\Users\Administrator\Documents\ChatGPT\New project\test_assets\t2i_expanded.jsonl

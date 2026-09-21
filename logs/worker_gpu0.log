@@ -1,0 +1,8 @@
+WORKER dev=0 ids=['05_style_anime', '06_style_oil', '07_style_ink', '08_style_cyber', '09_style_ghibli', '10_style_3d'] gpu=NVIDIA GeForce RTX 3090
+[1/6] 05_style_anime 1536x864 OK 176s peak=17.4GB
+[2/6] 06_style_oil 1536x864 OK 144s peak=17.4GB
+[3/6] 07_style_ink 1536x864 OK 149s peak=17.4GB
+[4/6] 08_style_cyber 1536x864 OK 152s peak=17.5GB
+[5/6] 09_style_ghibli 1536x864 OK 151s peak=17.4GB
+[6/6] 10_style_3d 1536x864 OK 149s peak=17.5GB
+WORKER_DONE dev=0 done=6

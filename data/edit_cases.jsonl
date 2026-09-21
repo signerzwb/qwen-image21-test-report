@@ -1,0 +1,20 @@
+{"id": "01_bg_louvre", "category": "background", "prompt": "保持人物形象完全不变，把背景换成巴黎卢浮宫玻璃金字塔前，16:9横向构图，全身照，站立姿势自然，胶片风格", "input_images": ["C:/Users/Administrator/Documents/ChatGPT/New project/output/portrait_film.png"], "task_type": "background"}
+{"id": "02_bg_beach", "category": "background", "prompt": "保持人物完全不变，把背景换成傍晚的海滩，夕阳，全身照", "input_images": ["C:/Users/Administrator/Documents/ChatGPT/New project/output/portrait_film.png"], "task_type": "background"}
+{"id": "03_bg_office", "category": "background", "prompt": "保持人物完全不变，把背景换成现代科技公司办公室，工位和落地窗", "input_images": ["E:/qwenimage21测试/03_源图/src_male.png"], "task_type": "background"}
+{"id": "04_bg_sofa", "category": "background", "prompt": "保持猫的形象不变，把背景换成温暖的家庭客厅，猫坐在米色沙发上", "input_images": ["C:/Users/Administrator/Documents/ChatGPT/New project/output/cat_test1024.png"], "task_type": "background"}
+{"id": "05_style_anime", "category": "style", "prompt": "把这张照片变成日漫风格插画，保持人物五官和发型不变", "input_images": ["C:/Users/Administrator/Documents/ChatGPT/New project/output/portrait_film.png"], "task_type": "style"}
+{"id": "06_style_oil", "category": "style", "prompt": "把这张照片变成梵高风格油画，笔触明显，保持人物长相不变", "input_images": ["E:/qwenimage21测试/03_源图/src_male.png"], "task_type": "style"}
+{"id": "07_style_ink", "category": "style", "prompt": "把这张风景照变成中国水墨画风格，留白，保持构图不变", "input_images": ["E:/qwenimage21测试/03_源图/src_landscape.png"], "task_type": "style"}
+{"id": "08_style_cyber", "category": "style", "prompt": "把这条街变成赛博朋克风格，霓虹灯、全息广告，街道元素保留", "input_images": ["E:/qwenimage21测试/03_源图/src_street.png"], "task_type": "style"}
+{"id": "09_style_ghibli", "category": "style", "prompt": "把这张美食照变成吉卜力动画风格，保持食物形态不变", "input_images": ["E:/qwenimage21测试/03_源图/src_food.png"], "task_type": "style"}
+{"id": "10_style_3d", "category": "style", "prompt": "把这个腕表变成3D渲染广告大片风格，金属质感更强，戏剧性布光", "input_images": ["E:/qwenimage21测试/03_源图/src_product.png"], "task_type": "style"}
+{"id": "11_time_night", "category": "time", "prompt": "把这条街变成夜晚，路灯和店招霓虹亮起，招牌 面馆 两字保留", "input_images": ["E:/qwenimage21测试/03_源图/src_street.png"], "task_type": "time"}
+{"id": "12_season_snow", "category": "season", "prompt": "把这个场景变成冬季，地面和树枝积雪，湖面结冰，保持构图", "input_images": ["E:/qwenimage21测试/03_源图/src_landscape.png"], "task_type": "season"}
+{"id": "13_add_scarf", "category": "add", "prompt": "给照片中的人物围上一条红色围巾，其他保持不变", "input_images": ["C:/Users/Administrator/Documents/ChatGPT/New project/output/portrait_film.png"], "task_type": "add"}
+{"id": "14_add_glasses", "category": "add", "prompt": "给这只猫戴上一副圆框眼镜，猫的其他特征保持不变", "input_images": ["C:/Users/Administrator/Documents/ChatGPT/New project/output/cat_test1024.png"], "task_type": "add"}
+{"id": "15_add_boat", "category": "add", "prompt": "在湖面上加一条正在划动的小船，船上有渔夫，倒影合理，其余保持不变", "input_images": ["E:/qwenimage21测试/03_源图/src_landscape.png"], "task_type": "add"}
+{"id": "16_attr_color", "category": "attribute", "prompt": "把这辆白车变成亮红色金属漆，车身造型和其他一切保持不变", "input_images": ["E:/qwenimage21测试/03_源图/src_car.png"], "task_type": "attribute"}
+{"id": "17_text_sign", "category": "text", "prompt": "把店铺招牌上的 面馆 两个字改成 茶馆，招牌样式和场景其他部分保持不变", "input_images": ["E:/qwenimage21测试/03_源图/src_street.png"], "task_type": "text"}
+{"id": "18_multi_group", "category": "multi_ref", "prompt": "让 <image1> 中的男性和 <image2> 中的女性坐在咖啡馆里，并排而坐面向镜头微笑合影，两人的长相、发型、服装都保持不变", "input_images": ["E:/qwenimage21测试/03_源图/src_male.png", "C:/Users/Administrator/Documents/ChatGPT/New project/output/portrait_film.png"], "task_type": "multi_ref"}
+{"id": "19_fullbody", "category": "composition", "prompt": "把这张半身照扩展成全身照：人物站在城市街道上，全身可见，脸和上半身与原图保持一致，补出合理的下半身和鞋子，3:4竖构图", "input_images": ["C:/Users/Administrator/Documents/ChatGPT/New project/output/portrait_film.png"], "task_type": "composition"}
+{"id": "20_remove_crowd", "category": "remove", "prompt": "把街上所有行人去掉，街道清空，建筑、招牌、灯笼等保持不变", "input_images": ["E:/qwenimage21测试/03_源图/src_street.png"], "task_type": "remove"}

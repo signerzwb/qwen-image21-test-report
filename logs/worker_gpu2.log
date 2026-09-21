@@ -1,0 +1,6 @@
+WORKER dev=2 ids=['17_text_sign', '18_multi_group', '19_fullbody', '20_remove_crowd'] gpu=NVIDIA GeForce RTX 3080
+[1/4] 17_text_sign 1536x864 OK 141s peak=17.4GB
+[2/4] 18_multi_group 1536x864 OK 473s peak=20.1GB
+[3/4] 19_fullbody 1536x864 OK 120s peak=17.4GB
+[4/4] 20_remove_crowd 1536x864 OK 116s peak=17.3GB
+WORKER_DONE dev=2 done=4
